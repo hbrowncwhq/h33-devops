@@ -24,6 +24,7 @@
             <h3>Index</h3>
             <p><button id="oak">Oak</button></p>
             <p><button id="beech">Beech</button></p>
+            <p><button id="Dead">Beech</button></p>
 
         </div>
         <div class="content">
@@ -33,7 +34,7 @@
             </iframe>
         </div>
         <div class="summary">
-            <iframe  id="i_summary" src="oak_summary.html">
+            <iframe  id="i_summary"  src="oak_summary.html">
             </iframe>
         </div>
 
@@ -50,8 +51,21 @@
             $("#i_summary").attr("src","oak_summary.html");
         })
         $("#beech").click(function(){
-            $("#i_content").attr("src","oak_content.html");
-            $("#i_summary").attr("src","oak_summary.html");
+
+            $("#i_content").attr("src","beech_content.html");
+            $("#i_summary").attr("src","beech_summary.html");
+
+        })
+        $("#Dead").click(function(){
+            $("#i_content").attr("src","DeadBush_content.html");
+            $("#i_summary").attr("src","DeadBush_summary.html");
+
+        })
+      
+          $("#willow").click(function(){
+            $("#i_content").attr("src","willow_content.html");
+            $("#i_summary").attr("src","willow_summary.html");
+
         })
 
         /* This will not be merged !  */
